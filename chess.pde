@@ -103,6 +103,16 @@ void setup() {
    Q2.addPiece(w2);
    Q1.display();
    Q2.display();
+ // This block initiates the kings
+   Tile K1 = board[4][0];
+   Tile k2 = board[4][7];
+   King bob = new King(K1, true);
+   King bobBro = new king(K2,false);
+   K1.addPiece(bob);
+   K2.addPiece(bobBro);
+   K1.display();
+   K2.display();
+   
 }
 void draw(){
 }
